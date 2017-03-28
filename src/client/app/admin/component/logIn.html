@@ -1,0 +1,11 @@
+<div>
+<form id="myLogin" ng-hide=vm.hide>
+    <input type="text" id="username" ng-model="username" /><br>
+    <input type="password" id="password" ng-model="password" >
+    <button type ="button" ng-click="vm.submit(password, username)">Login</button>
+</form>
+<div ng-show="vm.hide">
+    <main-view></main-view>
+</div>
+
+</div>
